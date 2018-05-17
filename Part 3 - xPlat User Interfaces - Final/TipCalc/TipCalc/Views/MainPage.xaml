@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TipCalc"
+             x:Class="TipCalc.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="lblTotal" Text="Total: "></Label>
+                <Entry x:Name="txtTotal" WidthRequest="100" Keyboard="Numeric" Text="{Binding TotalTxt, Mode=TwoWay}"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="lblTipAmount" Text="Tip Amount: "></Label>
+                <Entry x:Name="txtTipAmount" WidthRequest="100" Keyboard="Numeric" Text="{Binding TipTxt, Mode=TwoWay}"></Entry>
+            </StackLayout>
+            <Slider x:Name="sldTipCalc"
+                    Minimum="0"
+                    Maximum="100"
+                    Value="{Binding TipPercent, Mode=OneWayToSource}"></Slider>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="lblTipPercent" Text="Tip %: "></Label>
+                <Label x:Name="txtTipPercent" WidthRequest="100" Text="{Binding TipPercentTxt, Mode=OneWay}"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="lblGrandTotal" FontSize="Large" Text="Grand Total: "></Label>
+                <Label x:Name="txtGrandTotal" FontSize="Large" WidthRequest="100" Text="{Binding GrandTotalTxt, Mode=OneWay}"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
