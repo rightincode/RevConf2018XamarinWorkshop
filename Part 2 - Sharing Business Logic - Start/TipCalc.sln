@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc.iOS", "TipCalc\TipC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc.UWP", "TipCalc\TipCalc.UWP\TipCalc.UWP.csproj", "{F92DFA19-94D0-48E8-8FAC-FAF6A6509762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc", "TipCalc\TipCalc\TipCalc.csproj", "{866A249B-AFD0-4DF8-AF22-6F161A20D313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TipCalc", "TipCalc\TipCalc\TipCalc.csproj", "{866A249B-AFD0-4DF8-AF22-6F161A20D313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E140AAD-EE2A-4AC8-8E18-1FE47F61AB97}"
+	ProjectSection(SolutionItems) = preProject
+		Part 2 - Exercise.md = Part 2 - Exercise.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
