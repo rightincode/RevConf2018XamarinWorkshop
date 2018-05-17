@@ -66,7 +66,7 @@ namespace TipCalc.ViewModels
 
         public string TipPercentTxt
         {
-            get { return _calculator.TipPercent.ToString(); }
+            get { return Math.Round(_calculator.TipPercent,2).ToString(); }
         }
 
         public decimal TipPercent
@@ -83,13 +83,13 @@ namespace TipCalc.ViewModels
 
         public string GrandTotalTxt
         {
-            get { return _calculator.GrandTotal.ToString(); }
+            get { return Math.Round(_calculator.GrandTotal,2).ToString(); }
         }
 
         private void CalcTip()
         {
             _calculator.CalcTip();
-            tipTxt = _calculator.Tip.ToString();
+            tipTxt = Math.Round(_calculator.Tip,2).ToString();
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TipTxt"));
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("GrandTotalTxt"));
         }
