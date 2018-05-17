@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TipCalc"
+             x:Class="TipCalc.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Total Bill: "></Label>
+            <Label Text="{Binding Total, Mode=OneWay}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Tip %: "></Label>
+            <Label Text="{Binding TipPercent, Mode=OneWay}"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Grand Total: "></Label>
+            <Label Text="{Binding GrandTotal, Mode=OneWay}"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
